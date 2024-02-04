@@ -1,0 +1,81 @@
+﻿@model ecommerce.Models.Produit
+
+@{
+    ViewData["Title"] = "Edit";
+   
+}
+
+
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h2 style="color: #003166">Edit Product </h2>
+            <div>
+                <a asp-action="Index" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" style="font-family:Arial Black"> List Product</a>
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+<hr />
+
+<div class="container"> 
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="id" />
+            <div class="form-group">
+                    <label asp-for="Name" class="control-label" style="color:#004999; font-family:Arial Black"></label>
+                <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                    <label asp-for="Description" class="control-label" style="color:#004999; font-family:Arial Black"></label>
+                <input asp-for="Description" class="form-control" />
+                    <span asp-validation-for="Description" class="text-danger" ></span>
+            </div>
+            <div class="form-group">
+                    <label asp-for="PhotoUrl" class="control-label" style="color:#004999; font-family:Arial Black"></label>
+                <input asp-for="PhotoUrl" class="form-control" />
+                    <span asp-validation-for="PhotoUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                    <label asp-for="Price" class="control-label" style="color:#004999; font-family:Arial Black"></label>
+                <input asp-for="Price" class="form-control" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                    <label asp-for="Quantite" class="control-label" style="color:#004999; font-family:Arial Black"></label>
+                <input asp-for="Quantite" class="form-control" />
+                    <span asp-validation-for="Quantite" class="text-danger" ></span>
+            </div>
+                <div class="form-group">
+                    <label asp-for="Categorie" class="control-label" style="color:#004999; font-family:Arial Black"></label>
+                    <select class="form-select" aria-label="Default select example" asp-for="Categorie">
+                        <option value="beauty">beauté</option>
+                        <option value="vetement">vetement femme</option>
+                        <option value="chaussure">chaussure femme</option>
+                    </select>
+
+                    <span asp-validation-for="Categorie" class="text-danger"></span>
+                </div>
+            <br />
+                <div class="d-grid gap-2 col-5 ">
+                    <input type="submit" value="Save" class="btn btn-outline-success" style="font-family:Cascadia Mono" />
+                </div>
+        </form>
+    </div>
+</div>
+</div>
+
+
+<br />
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,113 @@
+﻿@model List<ecommerce.Models.Produit>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h2 style="color: #003166"> Cart</h2>
+            
+        </div>
+
+    </div>
+</section>
+<br />
+
+<div class="container">
+
+            
+            @foreach (var item in Model) {
+            <div class="col-lg-4 col-md-6 portfolio-item filter-@item.Categorie"> 
+                <div class="thumbnail-container">
+                        <img src="@item.PhotoUrl" class ="img-fluid" alt="">
+                       
+                        <div class="product-image">
+                            <br>
+                            <h4 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:14px" >@Html.DisplayFor(modelItem => item.Description)</h4>
+                            <div  class="product-price-and-shipping">
+                            <p style="font-family:'Arial Rounded MT';color: darkorange"> @Html.DisplayFor(modelItem => item.Price) DH</p>
+                            </div>
+                        </div>
+                            
+                            <div class="portfolio-links">
+                                <a href="@item.PhotoUrl" data-gallery="portfolioGallery" class="portfolio-lightbox" title="photo"> </a>
+
+                    <button onClick="supprimerPanier(this)" class="btn btn-outline-danger"><i class="bi bi-cart3"></i> annuler du panier<input type="hidden" value="@item.id" /></button>
+                                
+                         
+                        </div>
+
+                    </div>
+
+                </div>
+                <br />
+                }
+                @if(Model.Count==0)
+                {
+                            <h2>Panier Vide</h2>
+                }
+                else{
+                    <h4>Valider Commande</h4>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-4">
+                                <div  class="text-danger"></div>
+                                <div class="form-group">
+                                    <label  class="control-label">Nom</label>
+                                    <input  class="form-control" />
+                                    <span  class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label  class="control-label">Adresse</label>
+                                    <input  class="form-control" />
+                                    <span  class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                        <button onClick="valider()" class="btn btn-primary">Valider</button>
+
+                                </div>
+                        </div>
+                    </div>
+                }
+
+    <script>
+        function supprimerPanier(e) {
+            // Obtient la valeur du premier élément input dans l'élément fourni
+            var id = e.getElementsByTagName("input")[0].value;
+            // Initialise un tableau vide pour le panier  *
+            var panier = Array();
+            //  S'il existe des cookies, divise le cookie 'panier' et le convertit en tableau
+
+            if (document.cookie.length > "panier=".length)
+                panier = document.cookie.split('=')[1].split('-');
+            // Ajoute l'ID de l'article au tableau du panier
+
+            panier.splice(panier.indexOf(id), 1);
+
+            console.log(panier);
+            document.getElementById("cart-count").innerHTML = panier.length;
+            // Convertit le tableau du panier en une chaîne séparée par des virgules
+            panier = panier.join('-');
+
+            //Définitle cookie 'panier' avec la valeur mise à jour, ainsi qu'une date d'expiration et un chemin
+            e.parentElement.parentElement.parentElement.remove();
+            document.cookie = `panier=${panier}; expires=Wed, 18 Dec 2030 12:00:00 UTC; path=/`;
+
+        }
+
+        function valider() {
+            var inputs = Array.prototype.slice.call(document.getElementsByTagName("input"));
+            var produits = inputs.splice(0,inputs.length-2)
+            var name = inputs[inputs.length-2].value;
+            var addr = inputs[inputs.length - 1].value;
+            console.log(name);
+            fetch("https://localhost:7204/Commandes/Create")
+        }
+    </script>
+<div/>
+

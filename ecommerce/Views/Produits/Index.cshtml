@@ -1,0 +1,89 @@
+﻿@model IEnumerable<ecommerce.Models.Produit>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h2 style="color: #003166">List Product</h2>
+            <ol>
+                <li>
+                    <a asp-action="Create">
+                        <button type="button" class="btn btn-outline-primary">Create New</button>
+                    </a>
+                </li>
+            </ol>
+        </div>
+
+    </div>
+</section>
+<br /> <br />
+<div class="container">
+
+    <table class="table" style=" border-collapse: collapse;
+            width: 100%">
+    <thead>
+            <tr >
+                <th class="fw-bold" style="color:#0056b2">
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+                <th class="fw-bold" style="color:#0056b2">
+                    @Html.DisplayNameFor(model => model.Description)
+            </th>
+                <th class="fw-bold" style="color:#0056b2">
+                @Html.DisplayNameFor(model => model.PhotoUrl)
+            </th>
+                <th class="fw-bold" style="color:#0056b2">
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+             
+                <th class="fw-bold" style="color:#0056b2">
+                @Html.DisplayNameFor(model => model.Quantite)
+            </th>
+
+                <th class="fw-bold" style="color:#0056b2">
+                    @Html.DisplayNameFor(model => model.Categorie)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+                <tr >
+            <td >
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhotoUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantite)
+                </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Categorie)
+                    </td>
+                
+                    <td class="d-flex justify-content-between">
+                  
+               
+                    <a asp-action="Edit" asp-route-id="@item.id"><i class="bi bi-pen" title="Edit"></i></a> |
+                        <a asp-action="Details" asp-route-id="@item.id"><i class="bi bi-info-circle-fill" title="Details"></i></a> |
+                    <a asp-action="Delete" asp-route-id="@item.id"><i class="bi bi-trash" title="Delete"></i></a>
+              
+            </td>
+        </tr>
+}
+    </tbody>
+</div>
+
+</table>
+<br> <br />

@@ -1,0 +1,127 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ecommerce
+build_property.RootNamespace = ecommerce
+build_property.ProjectDir = D:\ecommerce-master\ecommerce-master\ecommerce\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\ecommerce-master\ecommerce-master\ecommerce
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/Commandes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWFuZGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/Commandes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWFuZGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/Commandes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWFuZGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/Commandes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWFuZGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/Commandes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWFuZGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/ligne_Commande/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbGlnbmVfQ29tbWFuZGVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/ligne_Commande/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbGlnbmVfQ29tbWFuZGVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/ligne_Commande/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbGlnbmVfQ29tbWFuZGVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/ligne_Commande/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbGlnbmVfQ29tbWFuZGVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/ligne_Commande/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbGlnbmVfQ29tbWFuZGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/Paniers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFuaWVyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/Paniers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFuaWVyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/Paniers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFuaWVyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/Produits/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVpdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/Produits/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVpdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/Produits/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVpdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/Produits/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVpdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/Produits/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVpdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ecommerce-master/ecommerce-master/ecommerce/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-9gj9yy8tln
